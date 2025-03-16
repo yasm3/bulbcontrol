@@ -23,11 +23,11 @@ public class Bulb {
     private int sat; // 0 - 100
 
     // Actions queue
-    private BulbControl bc;
+    private BulbCommander bc;
 
     public Bulb(String data) {
         updateValues(data);
-        bc = new BulbControl(host);
+        bc = new BulbCommander(host);
     }
 
     public void updateValues(String data) {
